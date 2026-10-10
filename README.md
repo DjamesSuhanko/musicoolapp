@@ -4,8 +4,8 @@ Site independente do código do aplicativo, preparado para **musicool.clavesol.c
 
 ## Conteúdo
 
-- `content/index.html`: página inicial provisória, com `noindex,follow` até receber o conteúdo definitivo.
-- `content/privacy.html`: texto da política existente em `Musicool/Musicool/docs/privacy.html`, preservado sem alterações.
+- `content/index.md`: página inicial provisória, com `noindex,follow` até receber o conteúdo definitivo.
+- `content/privacy.md`: texto da política existente em `Musicool/Musicool/docs/privacy.html`, preservado sem alterações.
 - `/privacidade/` e `/privacy.html`: política pública.
 - `/contato/`: contato do desenvolvedor.
 - `templates/base.html` e `assets/style.css`: layout compartilhado.
@@ -15,6 +15,7 @@ Este repositório não contém o código, chaves de assinatura ou arquivos de co
 ## Prévia local
 
 ```bash
+python3 -m pip install -r requirements.txt
 python3 build.py
 python3 scripts/check_site.py
 python3 -m http.server 8080 --directory dist
@@ -28,4 +29,8 @@ No DNS: CNAME `musicool` apontando para `djamessuhanko.github.io`, inicialmente 
 
 URL da política: https://musicool.clavesol.com.br/privacidade/
 
-Para editar a página inicial, altere `content/index.html`; ao concluir o conteúdo definitivo, ajuste a descrição em `build.py` e remova o `noindex` da entrada inicial em `pages`.
+Para editar a página inicial, altere `content/index.md`; ao concluir o conteúdo definitivo, ajuste a descrição em `build.py` e remova o `noindex` da entrada inicial em `pages`.
+
+## Editar conteúdo
+
+Consulte [EDITAR-CONTEUDO.md](EDITAR-CONTEUDO.md). Apresentação, política e contato são editados em Markdown, dentro de `content/`.
