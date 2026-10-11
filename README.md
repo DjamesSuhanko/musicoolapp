@@ -34,3 +34,5 @@ Para editar a página inicial, altere `content/index.md`; ao concluir o conteúd
 ## Editar conteúdo
 
 Consulte [EDITAR-CONTEUDO.md](EDITAR-CONTEUDO.md). Apresentação, política e contato são editados em Markdown, dentro de `content/`.
+
+Para escrever a descrição completa do aplicativo, edite **`content/apresentacao.md`**. O conteúdo aparece entre o topo e os blocos de privacidade/contato, sem alterar essas áreas.

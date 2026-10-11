@@ -1,5 +1,5 @@
 Title: Musicool
-Description: Página em preparação.
+Description: O melhor afinador e metrônomo para Android
 Image: musicool-logo.png
 
 ## Seus dados no aplicativo
